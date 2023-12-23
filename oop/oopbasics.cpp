@@ -3,20 +3,37 @@ using namespace std;
 
 class Hero
 {
-public:
+private:
     int health;
     char level;
-    void print() {
-        cout<<" Hii there";
+
+public:
+    int getHealth()
+    {
+        return health;
+    }
+    char getLevel()
+    {
+        return level;
+    }
+    void setHealth(int h)
+    {
+        health = h;
+    }
+    void setLevel(char l)
+    {
+        level = l;
     }
 };
+
+
 int main()
 {
-    Hero ali;
-    ali.health = 80;
-    ali.level = 'A';
-    ali.print();
-    cout<<endl;
-    cout << ali.health << " " << ali.level;
+    Hero Ali;
+    Ali.setHealth(50);
+    cout << Ali.getHealth() << endl;
+    Ali.setLevel('A');
+    cout << Ali.getLevel();
+    //39 mins done
     return 0;
 }

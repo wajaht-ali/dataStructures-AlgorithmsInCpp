@@ -1,37 +1,23 @@
-//This file includes all the test cases (raw code), which required to test the functionality before actual implementation.
-
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
-bool valid(char ch) {
-    if( (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9') ){
-        return 1;
-    }
-    else {
-        return 0;
-    }
-}
-int main() {
-    string str;
-    bool flag = false;
-    cout<<"enterPrompt: ";
-    cin>>str;
-    int len = str.size();
-    // int len2 = temp.size();
+int main()
+{
+    string str = "wajahat";
+    char ch;
+    int count = 0;
 
-    for(int i=0; i<len; i++) {
-        if(valid(str[i]) == 1) {
-            flag = true;
+    for (int i = 0; i < str.length(); i++)
+    {
+        for (int j = i+1; j < str.length(); j++)
+        {
+            if(str[i] == str[j]) {
+                ch = str[i];
+                count = count + 1;
+            }
         }
-        else {
-            flag = false;
-        }
     }
-    if(flag == true) {
-        cout<<"stringIsValid"<<endl;
-    }
-    else {
-        cout<<"stringIsInvalid";
-    }
+    cout<<count<<" "<<ch<<endl;
     return 0;
 }
