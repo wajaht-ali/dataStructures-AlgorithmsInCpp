@@ -3,37 +3,33 @@ using namespace std;
 
 class Hero
 {
-private:
+public:
     int health;
     char level;
 
-public:
-    int getHealth()
-    {
-        return health;
+    Hero() {
+        cout<<"Default constructor: "<<endl;
+        
     }
-    char getLevel()
-    {
-        return level;
+
+    Hero(int health, char level) {
+        this->health = health;
+        this->level = level;
     }
-    void setHealth(int h)
-    {
-        health = h;
-    }
-    void setLevel(char l)
-    {
-        level = l;
+
+    void print() {
+        cout<<health<<" "<<level;
+
     }
 };
-
-
 int main()
 {
-    Hero Ali;
-    Ali.setHealth(50);
-    cout << Ali.getHealth() << endl;
-    Ali.setLevel('A');
-    cout << Ali.getLevel();
-    //39 mins done
+    //static object creation
+    Hero ali;
+
+    //dynamic object creation
+    Hero *h = new Hero(50, 'A');
+    
+    ali.print();
     return 0;
 }
