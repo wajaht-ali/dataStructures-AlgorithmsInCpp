@@ -12,6 +12,7 @@ public:
         
     }
 
+    //paramerterized constructor
     Hero(int health, char level) {
         this->health = health;
         this->level = level;
@@ -19,9 +20,10 @@ public:
 
     void print() {
         cout<<health<<" "<<level;
-
     }
 };
+
+
 int main()
 {
     //static object creation

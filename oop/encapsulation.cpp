@@ -2,6 +2,7 @@
 using namespace std;
 
 class Employee {
+    //encapsulation of wrapping up the data members in a private shell
     private:
         char level;
         int salary;

@@ -31,10 +31,6 @@ int main() {
     // cout<<endl;
     // Khan.getAttr();
 
-    //Static & dynamic memory allocation
-
-    char *ch = new char;
-    *ch = 'A';
-    cout<<ch;
+    
     return 0;
 }

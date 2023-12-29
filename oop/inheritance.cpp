@@ -31,6 +31,7 @@ int main() {
 
     Male object1;
     cout << object1.age;
+    cout<<endl;
     object1.getAction();
     return 0;
 }
