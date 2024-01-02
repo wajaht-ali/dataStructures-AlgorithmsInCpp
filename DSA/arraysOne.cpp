@@ -43,6 +43,7 @@ int main() {
         cin>>arr[i];
     }
     cout<<endl;
+    
     //Search for the key
     cout<<"enterKeyToSearch: ";
     cin>>key;
