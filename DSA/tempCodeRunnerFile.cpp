@@ -46,6 +46,7 @@ bool search(Node* &head, int target) {
     }
     return 0;
 }
+
 int main()
 {
     Node *node1 = new Node(5);
