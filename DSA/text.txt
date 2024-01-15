@@ -1,0 +1,27 @@
+Suppose that we have numbers between 1 and 100 in a binary search tree and we want to search for the number 15. Which of the following sequences could not be the sequence of nodes examined ?
+
+
+[97, 27, 12, 24, 16, 14, 15]
+[12, 39, 27, 20, 16, 14, 15]
+[65, 8, 54, 37, 6, 15]
+[81, 68, 11, 56, 38, 14, 29, 24, 18, 17, 16, 15]
+unanswered
+------------------------------------------------------------------
+Child-1: Cow can eat meat which implies Fish can do programming.
+
+Child-2: Cat cannot Fly if and only if Fish can swim.
+
+Child-3: Cow can eat meat which implies Fish can do programming, if and only if, Cat cannot Fly if and only if Fish can swim.
+------------------------------------------------------------
+Truth Harmony
+Braden speaks truth in 41% of cases and Fred in 51% of cases. In what percentage of cases are they likely to contradict each other, talking about the same incident.
+------------------------------------
+Mode MEan Median
+M = [95, 94, 5, 95, 'N']
+
+What is the value of N if the mode, mean and median of the list M are equal to each other? Express your answer to the nearest whole number.
+
+Note:
+The mode of a set of data values is the value that appears most often.
+The mean is the average of the numbers: a calculated "central" value of a set of numbers.
+Median is the middle number in a sorted list of numbers.
