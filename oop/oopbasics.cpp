@@ -9,12 +9,13 @@ public:
 
     Hero() {
         cout<<"Default constructor: "<<endl;
+        cout<<"I'm default constructor"<<endl;
         
     }
 
     //paramerterized constructor
     Hero(int health, char level) {
-        this->health = health;
+        this->health = health;  //the keyword "this" points toward the current object.
         this->level = level;
     }
 
