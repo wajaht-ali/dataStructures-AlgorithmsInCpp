@@ -20,15 +20,18 @@ void swapAlternate(int arr[], int size) {
 }
 
 int main() {
-    int even[8] = {3, 4, 5, 2, 1, 6, 8, 9}, size = 8;
-    int odd[5] = {9, 6, 7, 4, 3}, len = 5;
+    int even[8] = {3, 4, 5, 2, 1, 6, 8, 9};
+    int size = sizeof(even)/sizeof(even[0]);
+    int odd[5] = {9, 6, 7, 4, 3};
+    int len = sizeof(odd)/sizeof(odd[0]);
 
     swapAlternate(even, size);
     printArray(even, size);
 
     cout<<endl;
 
-    // swapAlternate(odd, len);
-    // printArray(odd, len);
+    swapAlternate(odd, len);
+    printArray(odd, len);
+    // cout<<size<<" "<<len;
     return 0;
 }
